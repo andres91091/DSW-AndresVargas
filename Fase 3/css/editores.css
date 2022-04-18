@@ -2,7 +2,6 @@ header
 {
     background-color: #FBD6D2;
     padding: 30px;
-    font-size: 30px;
 
 }
 nav 
@@ -16,19 +15,22 @@ section
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 20px;
+    
 
 }
+
 article
 {
     background-color: #F190B7;
     grid-column: 1/4;
+    font-size: 18px;
 
 }
 aside 
 {
     background-color: #CE49BF;
-    grid-column: 4/5;    
+    grid-column: 4/5;  
+    font-size: 20px;  
 
 }
 footer
@@ -71,4 +73,9 @@ p
 }
 .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
     display: block;
+}
+
+#letra 
+{
+    font-size: 20 px;
 }

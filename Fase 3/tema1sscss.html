@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +9,21 @@
 </head>
 <body>
     <header class="centrado">
-        Sintaxis y selectores CSS e interaccion Humano - Ordenador
+        <h1 id="letra">Sintaxis y selectores CSS e interaccion Humano - Ordenador</h1>
     </header>
     <nav class="menuCSS3">
 		<ul>
-			<li><a href="#">Inicio</a></li>
+			<li><a href="index.html">Inicio</a></li>
 			<li><a href="#">Temas</a>
 				<ul>
-					<li><a href="">Sintaxis y selectores CSS</a></li>
-					<li><a href="#">Interaccion Humano - Ordenador</a></li>
+					<li><a href="tema1sscss.html">Sintaxis y selectores CSS</a></li>
+					<li><a href="tema2iho.html">Interaccion Humano - Ordenador</a></li>
 				</ul>
 			</li>
 			<li><a href="#">Recursos digitales</a>
                 <ul>
-					<li><a href="#">Sintaxis y selectores CSS</a></li>
-					<li><a href="#">Interaccion Humano - Ordenador</a></li>
+					<li><a href="tema1rdcss.html">Sintaxis y selectores CSS</a></li>
+					<li><a href="tema2rdiho.html">Interaccion Humano - Ordenador</a></li>
 				</ul>
             </li>
 			<li><a href="#">Aprendizaje</a>
@@ -31,27 +31,162 @@
 					<li><a href="#">Actividad 1</a></li>
 					<li><a href="#">Actividad 2</a></li>
 				</ul>
-
+			</li>
+            <li><a href="#">Acerca de</a>
+				<ul>
+					<li><a href="autor.html">Autor</a></li>
+				</ul>
 			</li>
 		</ul>
 	</nav>
         
     <section>
         <article>
-            hola soy yo
-            <article>
-                hola de nuevo
-            </article>
+            <h3 id="letra">Sintaxis CSS</h3>            
+                <p>
+                                
+                    <br>
+                    Existen 3 tipos de declaraciones en CSS, la primera se conoce como CSS en línea y hace referencia a las declaraciones de propiedad que se hace dentro de la misma etiqueta HTML. 
+                    <br>                
+                    Por ejemplo: 
+                    <br>                
+                    <p class="centrado">
+                        &lt;h1 style="text-align:center"&gt; nombre del título &lt;/h1&gt;
+                    </p>  
+                    Con esto logramos que el titulo de referencia h1 se ubique en la posición central de la página. 
+                </p>
+                <p>
+                    La segunda declaración se conoce incrustado y hace referencia a que las propiedades que queremos que tomen las diferentes variables las declaramos en el comienzo de la pagina en el espacio denominado “HEAD”
+                    <br>
+                    Por ejemplo: 
+                    </p>
+                    <p class="centrado">
+                        &lt;head&gt;  &lt;style&gt;  h1 { padding: 20px } &lt;/style&gt; &lt;/head&gt; 
+                    </p>
+                    Con esto logramos que un titulo h1 tenga un espacio de 20 magapixeles.
+                    <br>
+                </p>
+                <p>
+                    Por último tenemos la declaración externa, en este tipo de declaración debemos crear un archivo con extensión .css y debemos enlazarlo con nuestra página en HTML en dicho archivo crearemos las diferentes propiedades que queremos aplicar y nuestra página las tomara.
+                    <br>
+                    Lo primero será enlazar nuestro archivo creado con nuestra pagina y para eso usaremos la etiqueta link
+                    <br>
+                    Por ejemplo:
+                    <p class="centrado">
+                        &lt;head&gt;  &lt;link rel="stylesheet" href="css/editores.css”&gt; 
+                    </p>
+                    De esta manera logramos enlazar nuestro archivo con extensión .css llamado editores ubicado en la carpeta css.
+                    <br>
+                    Ahora vamos a crear en nuestro archivo .css una declaración para darle unas propiedades a una etiqueta 
+                    <br>
+                    Ejemplo: 
+                    <br>
+                    <p class="centrado">
+                        {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                            font-size: 20px;
+                        
+                        }
+                        
+                    </p>
+                    <br>
+                    De esta manera crear una distribución de un layout de 4 espacios a nuestra página y le damos un tamaño de letra de 20 megapixeles.
+
+                </p>  
+            <h3 id="letra">Selectores CSS</h3>
+                <p>
+                    <h4>Selector de grupo</h4>
+                    <br>
+                    Un selector de grupo lo podemos identificar de la siguiente manera: 
+                    <br>
+                    <p class="centrado">
+                        { 
+                            background-color: #blue;<br>
+                            font-size: 15px;<br>
+                             padding: 30px;
+                        }                        
+                    </p>
+                    De esta manera todas las etiquetas article que tengamos en nuestra página, se les aplicara los parámetros definidos para el color de fondo, tamaño de letra y espacio a ocupar.
+                    <br>
+                    <h4 id="letra">Selector de clase</h4>
+                    <br>
+                    Un selector de clase lo declaramos por medio de (.) y le agregamos un nombre para identificarlo, lo podemos identificar de la siguiente manera: 
+                    <br>
+                    <p class="centrado">
+                        .derecha
+                        {
+                            text-align: right;<br>
+                            color: #191C26;
+                        }
+                        
+                    </p>
+                    En este caso a todas las etiquetas que le definamos esta clase estarán alineados a la derecha y tendrán ese color definido.
+                    <br>
+                    Para asignarle a una etiqueta este selector lo hacemos de la siguiente manera.
+                    <p class="centrado">
+                        &lt;aside class = "derecha"&gt;  &lt;/aside&gt;
+                    </p>
+                    <br>
+                    <h4 id="letra">Selector de identificación</h4>
+                    <br>
+                    Un selector de identificación lo declaramos por medio de (#) y le agregamos un nombre para identificarlo, lo podemos identificar de la siguiente manera: 
+                    <br>
+                    <p class="centrado">
+                        #letra
+                        {
+                        font-size: 10px;
+                        }
+                        
+                    </p>
+                    En este caso a todas las etiquetas que le definamos esta identificación tendrán el tamaño de fuente aquí indicado.
+                    <br>
+                    Para asignarle a una etiqueta este selector lo hacemos de la siguiente manera.
+                    <p class="centrado">
+                        &lt;h5 id ="letra"&gt;  &lt;/aside&gt;
+                    </p>
+
+                </p>          
+            
         </article>   
        
         <aside>
-             <p>
-                Este sitio esta diseñado para contribuir con el desarrollo del aprendizaje basados en las nuevas tecnologías donde por medio del uso de estas herramientas se logra llevar conceptos claros y condensados de como se usan herramientas como HTML y CSS para el diseño de páginas web.
+            <h4 class="centrado"; id="letra">Sintaxis CSS</h4>
+                <p>
+                    La sintaxis en el lenguaje CSS se compone de 3 elementos, el primero es un selector el cual hace referencia a la etiqueta de HTML que se le aplicara el estilo, el siguiente elemento es la propiedad hace referencia a que propiedad de la etiqueta de HTML se le aplicara el estilo y por último el valor de la propiedad que se aplicara. 
+                    <br>
+                    (Celaya Luna, 2014, p.14)
+                </p>
+                <p>
+                    La propiedad o declaración se encierra entre las llaves o paréntesis y podrá contener una o varias propiedades, separadas por (;) cada propiedad debe ir acompañada por su valor establecido.
+                    <br>
+                    (Durango, 2015, p.12)
+                </p>
+                <p>
+                    A un mismo elemento de HTML se le pueden asignar muchas propiedades definidas en CSS y estas pueden ser aplicadas a otros elementos de HTML.
+                    <br>
+                    (Tinoco, 2014, p.15)
+                </p>
+        <h4 class="centrado"; id="letra">Selectores CSS</h4>
+            <p>
+                <h5 id="letra">Selectores de Grupo</h5>
+                Cuando se debe aplicar un estilo a mas de un elemento se pueden agrupar los selectores que comparten la misma definición, se escriben los selectores uno tras otro separados por una coma.
+                <br>
+                (Durango, 2015, p.15)
                 <br>
                 <br>
-                Adicionalmente aprender como se esta desarrollando la HCI (Human Computer Interaction) por sus siglas en inglés, y como esta herramienta nos puede servir para diseñar paginas o aplicaciones mejor enfocadas al consumo de hoy.
-                
-            </p>
+                <h5 id="letra">Selectores de Clase</h5> 
+                Los selectores de clase permiten que se puedan establecer diferentes estilos que se le puedan aplicar a un mismo elemento. Adicionalmente se pueden crear selectores que se puedan usar en diferentes elementos del HTML. 
+                <br>
+                (Durango, 2015, p.15,16)
+                <br>
+                <br>
+                <h5 id="letra">Selectores de Identificación</h5> 
+                Este selector es diferente al de clase porque se aplica a un solo elemento del código. Las reglas del HTML dictan que los atributos del selector no se pueden repetir en el código.
+                <br>
+                (Durango, 2015, p.18,19)
+                <br> 
+            </P>            
 
         </aside>
         
