@@ -79,3 +79,8 @@ p
 {
     font-size: 20 px;
 }
+.imagen
+{
+    display: block;
+    margin: auto;
+}
