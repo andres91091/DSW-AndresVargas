@@ -1,0 +1,75 @@
+.abs-center {
+    align-items: center;
+    justify-content: center;
+  }
+
+.form-check {
+    position: relative;
+    top: 10px; 
+    left: 300px;
+}
+
+#div-bg {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#btn-color-picker {
+  background: none;
+  border: #000 1px solid;
+  padding: 2px;
+  cursor: pointer;
+}
+.menuCSS3 ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: static;
+}
+.menuCSS3 a {
+  display: block;
+  padding: 2em;
+  background-color: #CE49BF;
+  text-decoration: none;
+  color: #191C26;
+  position: static;
+  width: 269px;
+}
+.menuCSS3 a:hover {
+  background-color: #473f49;
+}
+
+.menuCSS3 li {
+  background-color: #473f49;
+}
+
+.menuCSS3 ul li ul {
+  display: none;
+}
+.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+  display: block;
+  position: fixed;
+}
+
+#letra 
+{
+  font-size: 20 px;
+}
+.imagen
+{
+  display: block;
+  margin: auto;
+}
+.centrado
+{
+  text-align: center;
+  position: static;
+}
+
+
+
+
